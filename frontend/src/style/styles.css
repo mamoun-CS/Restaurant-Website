@@ -1,0 +1,375 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #eee;
+  padding: 0 16px;
+  background-image: url('../img/main.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+#sale {
+  width: 50px;
+  height: 50px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #574515;
+  backdrop-filter: blur(50%);
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 3%;
+  width: 40%;
+  margin: 3%;
+  float: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.size {
+  width: 100%;
+  height: 50%;
+}
+.badge {
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 40%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.notes-container {
+  flex-wrap: wrap; position: relative;justify-content: space-between; 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1%; 
+  padding: 200px; 
+  justify-content: center;  margin-top: 300px;
+}
+
+
+.notes-containerM{
+  margin-top: 430px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  gap: 20px; 
+}
+
+.cart-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  gap: 20px;
+}
+
+#sale {
+  width: 50px; 
+  height: auto;
+}
+.payment {
+  background: rgb(66, 53, 9);
+  border-radius: 7px;
+  box-shadow: 0 20px 50px #0e0d0d;
+  padding: 3%;
+  width: 100%;
+  height: 10%;
+  margin: 3%;
+  display: flex;
+  float: left;
+}
+.payment h1 {
+  font-size: 2em;
+  margin-bottom: 6px;
+  color: #ffffff;
+  display: flex;
+}
+.payment p {
+  color:#fff;
+  font-size: 2em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.payment button
+{
+  color: #000;
+  width: 60%;
+  height: 30%;
+  margin: 20%;
+  padding-left: 100px;
+  
+}
+.submit {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px;  
+  padding: 10px 20px;
+  background-color: #535e69;
+  color: white;
+  border: none;
+  border-radius: 8px; 
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.submit:hover {
+  background-color: #adbfd3;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%; 
+  padding: 10px;
+}
+
+
+.card {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Image styles */
+.img-box, .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.product-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.product-description {
+  font-size: 16px;
+  color: #555;
+}
+
+
+.options, .card-content {
+  margin-top: 10px;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.add-to-cart-btn {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background: #0056b3;
+}
+.btn-group{
+  display: inline-flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #f5f8fb;
+  transition: border 0.3s ease;
+  
+}
+.btn-group:hover{
+  border: 1px solid #4097fe;
+}
+.butt{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#4097fe;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3 ease;
+}
+
+.butt:hover{
+  background-color: #f3f9ff;
+}
+.pp{
+  width: 50px;
+ margin-top: 20px;
+  display:inline-flex;
+align-items: center;
+justify-content: center;
+border-left: 1px solid #f5f8fb;
+border-right: 1px solid #f5f8fb;
+}
+.order-summary {
+  position: grid;
+  z-index: 1;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border-top: 2px solid #ccc;
+  padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.invoice-container {
+  max-width: 100%;
+  margin: auto;
+  padding: 1%;
+}
+.invoice-container h1 ,h2{
+ color: #fcdada;
+ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-size: xx-large;
+ display: flex;
+ background-color: #000;
+}
+
+
+.invoice-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: separate;
+  margin-top: 10px;
+}
+
+.invoice-table th, .invoice-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.invoice-table th {
+  background-color: #f2f2f2;
+}
+
+
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px; /* Adjust as needed */
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #555;
+}
+
+.modal-close-btn:hover {
+  color: #000;
+}

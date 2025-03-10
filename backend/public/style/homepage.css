@@ -1,0 +1,62 @@
+body{
+      background-image: url("../img/1.jpg");
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      display: inline;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      overflow: auto;
+}
+.card{
+    color: aqua;
+    justify-self: start;
+    text-align: center;
+    width: 30%;
+    height: 30%;
+    top: 10vh;
+    padding: auto;
+    padding-left: 20%;
+    padding-top: 10%;
+}
+h1{
+    color: aliceblue;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(30px); 
+}
+.bar{
+    padding: 1.5% 0;
+   text-align: center;
+ /*  background: rgb(237,237,237,1);*/
+   backdrop-filter: blur(30px); 
+   word-spacing: 20%;
+}
+.bar a {
+    color: rgb(250, 249, 249); 
+    text-decoration: none; 
+    margin: 0 15px; 
+    font-size: 18px; 
+    padding: 10px 15px; 
+}
+
+.bar a:hover {
+    background-color: #555; 
+    border-radius: 5px; 
+     text-decoration: underline;
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--second-color);
+}
+.now{
+    background-color: rgb(104, 145, 180);
+    color: black;
+    font-size: large;
+}
