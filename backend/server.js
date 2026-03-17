@@ -150,15 +150,7 @@ const sendInvoice = async (invoice, order) => {
 export { sendVerificationEmail, sendInvoice };
 
 
-const db = new pg.Client({
-    user: process.env.PG_USER, 
-    host: process.env.PG_HOST,
-    database: process.env.PG_DB, 
-    password: process.env.PG_PD,
-    port: process.env.PG_PORT,
-  });
-  
-db.connect()
+import db from "./config/database.js";
 
 const saltRound = 3;
 
